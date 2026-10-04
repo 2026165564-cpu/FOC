@@ -14,21 +14,53 @@
 
 <p>This is an animation of an AND Logic Gate.</p>
 
-<img src="andof1on.PNG" alt="AND Gate" width="800">
+<img id="gateImage" src="and2off.png" alt="AND Gate" width="800">
 
 <br><br>
 
-<button>0 AND 0</button>
+<button onclick="changeLight('00')">0 AND 0</button>
 
-<button>0 AND 1</button>
+<button onclick="changeLight('01')">0 AND 1</button>
 
-<button>1 AND 0</button>
+<button onclick="changeLight('10')">1 AND 0</button>
 
-<button>1 AND 1</button>
+<button onclick="changeLight('11')">1 AND 1</button>
 
 <br><br>
 
 <a href="projects.html">Back to Projects</a>
+
+<script>
+
+function changeLight(input) {
+
+    if (input === "00") {
+
+        document.getElementById("gateImage").src = "and2off.png";
+
+    }
+
+    else if (input === "01") {
+
+        document.getElementById("gateImage").src = "andoffon.png";
+
+    }
+
+    else if (input === "10") {
+
+        document.getElementById("gateImage").src = "andonoff.png";
+
+    }
+
+    else if (input === "11") {
+
+        document.getElementById("gateImage").src = "and2on.png";
+
+    }
+
+}
+
+</script>
 
 </body>
 

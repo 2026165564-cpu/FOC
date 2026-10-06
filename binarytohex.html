@@ -23,7 +23,7 @@ img {
 <hr>	
 
 
-<p><img src="bintohex.jpg"></p>
+<p><img src="Hex.jpg"></p>
         
 			
          
@@ -31,13 +31,13 @@ img {
 
 <p>Enter any 4 digit binary number:</p>
 
-<button onclick="binToHex()">Submit</button>
+<button onclick="Hex()">Submit</button>
 
 <p>Hexidecimal Value : </p>
 <p id="demo"></p>
 
 <script>
-function binToHex() {
+function Hex() {
   var x = document.getElementById("inputBin").value;
   var hexOut = parseInt(x , 2).toString(16).toUpperCase();
   document.getElementById("demo").innerHTML = hexOut;

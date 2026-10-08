@@ -8,79 +8,129 @@
 
 <style>
 
-body{
+body {
 
-    margin:0;
+    margin: 0;
 
     font-family: Arial, sans-serif;
 
-    background-color:white;
+    background-color: white;
 
 }
 
-.header{
+.header {
 
-    background-color:purple;
+    background-color: purple;
 
-    color:white;
+    color: white;
 
-    text-align:center;
+    text-align: center;
 
-    padding:20px;
-
-}
-
-.menu{
-
-    width:200px;
-
-    float:left;
-
-    padding:20px;
+    padding: 20px;
 
 }
 
-.menu a{
+.menu {
 
-    display:block;
+    width: 200px;
 
-    margin-bottom:15px;
+    float: left;
 
-    font-size:24px;
-
-    text-decoration:none;
+    padding: 20px;
 
 }
 
-.content{
+.menu a {
 
-    margin-left:250px;
+    display: block;
 
-    background-color:lightblue;
+    margin-bottom: 15px;
 
-    padding:20px;
+    font-size: 24px;
 
-    min-height:500px;
-
-}
-
-.footer{
-
-    clear:both;
-
-    background-color:purple;
-
-    color:white;
-
-    text-align:center;
-
-    padding:15px;
+    text-decoration: none;
 
 }
 
-img{
+.content {
 
-    border:3px solid navy;
+    margin-left: 250px;
+
+    background-color: lightblue;
+
+    padding: 20px;
+
+    min-height: 500px;
+
+}
+
+.footer {
+
+    clear: both;
+
+    background-color: purple;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+}
+
+img {
+
+    border: 3px solid navy;
+
+}
+
+/* PROJECT BUTTONS */
+
+.project-button {
+
+    display: inline-block;
+
+    background: linear-gradient(135deg, #6930C3, #5390D9);
+
+    color: white !important;
+
+    text-decoration: none;
+
+    padding: 14px 22px;
+
+    margin: 8px 0;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+
+    transition: 0.2s;
+
+}
+
+.project-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
+
+}
+
+.project-button:active {
+
+    transform: translateY(1px);
+
+}
+
+.project-list {
+
+    list-style-type: none;
+
+    padding: 0;
 
 }
 
@@ -116,28 +166,105 @@ img{
 
 <h1>Projects</h1>
 
-<p>The final project will consist of 4 sections. Each section has a deadline to complete. A complete description of the project can be found on the course moodle site. It will consist of launching a website built with, html, css, and javascript and hosted on github. This site is a benchmark for the Final Project. See
-Project Specification on Moodle Site.</p>
-
 <p>
 
-  <li><a href="Notgate.html" style="color:black">Project 1: NOT Gate</a></h3></li>
-  <li><a href="andgate.html" style="color:black">Project 2: AND Gate</a></h3></li>
-  <li><a href="easyand.html" style="color:black">Project 2: AND Gate -easy version</a></h3></li>
-  <li><a href="binarytohex.html" style="color:black">Project 3: Binary to Hexidecimal Converter</a></h3></li>
-  <li><a href="ascii.html" style="color:black">Project 4: ASCII Converter</a></h3></li>
-  <li><a href="unicode.html" style="color:black">Project 4: UNICODE Converter</a></h3></li>
-  <li><a href="MLinstructions.html" style="color:black">Project 5: Machine Language Instructions Converter</a></h3></li>
+The final project will consist of 4 sections. Each section has a deadline
+
+to complete. A complete description of the project can be found on the
+
+course Moodle site. It will consist of launching a website built with
+
+HTML, CSS, and JavaScript and hosted on GitHub. This site is a benchmark
+
+for the Final Project. See Project Specification on Moodle Site.
 
 </p>
+
+<ul class="project-list">
+
+    <li>
+
+        <a href="Notgate.html" class="project-button">
+
+            Project 1: NOT Gate
+
+        </a>
+
+    </li>
+
+    <li>
+
+        <a href="andgate.html" class="project-button">
+
+            Project 2: AND Gate
+
+        </a>
+
+    </li>
+
+    <li>
+
+        <a href="easyand.html" class="project-button">
+
+            Project 2: AND Gate - Easy Version
+
+        </a>
+
+    </li>
+
+    <li>
+
+        <a href="binarytohex.html" class="project-button">
+
+            Project 3: Binary to Hexadecimal Converter
+
+        </a>
+
+    </li>
+
+    <li>
+
+        <a href="ascii.html" class="project-button">
+
+            Project 4: ASCII Converter
+
+        </a>
+
+    </li>
+
+    <li>
+
+        <a href="unicode.html" class="project-button">
+
+            Project 4: UNICODE Converter
+
+        </a>
+
+    </li>
+
+    <li>
+
+        <a href="MLinstructions.html" class="project-button">
+
+            Project 5: Machine Language Instructions Converter
+
+        </a>
+
+    </li>
+
+</ul>
 
 </div>
 
 <div class="footer">
 
-    © Powered by UB
+    ©️ Powered by UB
 
 </div>
+
+</body>
+
+</html>
 
 </body>
 

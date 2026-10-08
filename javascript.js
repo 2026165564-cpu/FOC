@@ -1,65 +1,91 @@
-var inputOneIsOn = false; 
+var inputOneIsOn = false;
+
 var inputTwoIsOn = false;
 
-
 function toggleImage() {
-   var img1 = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
-   var img2 = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
-  
-   
-   var imgElement = document.getElementById('toggleImage');
 
+    var img1 = "button-off-xxl.png";
 
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
-   
-   
+    var img2 = "button-on-xxl.png";
+
+    var imgElement = document.getElementById("toggleImage");
+
+    if (imgElement.src.includes("button-off-xxl.png")) {
+
+        imgElement.src = img2;
+
+    } else {
+
+        imgElement.src = img1;
+
+    }
+
 }
 
-  
 function toggleImage2() {
-   var img1 = "https://www.iconsdb.com/icons/preview/red/button-off-xxl.png";
-   var img2 = "https://www.iconsdb.com/icons/preview/green/button-on-xxl.png";
-  
-   
-   var imgElement = document.getElementById('toggleImage2');
 
+    var img1 = "button-off-xxl.png";
 
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
-   
-   
+    var img2 = "button-on-xxl.png";
+
+    var imgElement = document.getElementById("toggleImage2");
+
+    if (imgElement.src.includes("button-off-xxl.png")) {
+
+        imgElement.src = img2;
+
+    } else {
+
+        imgElement.src = img1;
+
+    }
+
 }
 
-    function toggleInputOne() { 
-            inputOneIsOn = !inputOneIsOn; 
-            
-        } 
+function toggleInputOne() {
 
-    function toggleInputTwo() { 
-            inputTwoIsOn = !inputTwoIsOn; 
-              
-           
-        } 
+    inputOneIsOn = !inputOneIsOn;
 
+}
 
+function toggleInputTwo() {
 
-function and(){
+    inputTwoIsOn = !inputTwoIsOn;
+
+}
+
+function and() {
+
     var a = inputOneIsOn;
+
     var b = inputTwoIsOn;
-    
-	  
-            console.log('Input one is on: ', 
-                                inputOneIsOn); 
-								
-	        console.log('Input two is on: ', 
-                                inputTwoIsOn); 
-	
-    
-    if(inputOneIsOn&&inputTwoIsOn)
-        document.getElementById('andGate').src='and2on.png';
-    else if (!inputOneIsOn && inputTwoIsOn) 
-        document.getElementById('andGate').src='andoffon.png';
-	else if (inputOneIsOn && !inputTwoIsOn) 
-        document.getElementById('andGate').src='andonoff.png';
-	else if (!inputOneIsOn && !inputTwoIsOn) 
-        document.getElementById('andGate').src='and2off.png';
-	}
+
+    console.log("Input one is on: ", inputOneIsOn);
+
+    console.log("Input two is on: ", inputTwoIsOn);
+
+    if (inputOneIsOn && inputTwoIsOn) {
+
+        document.getElementById("andGate").src = "and2on.png";
+
+    }
+
+    else if (!inputOneIsOn && inputTwoIsOn) {
+
+        document.getElementById("andGate").src = "andoffon.png";
+
+    }
+
+    else if (inputOneIsOn && !inputTwoIsOn) {
+
+        document.getElementById("andGate").src = "andonoff.png";
+
+    }
+
+    else if (!inputOneIsOn && !inputTwoIsOn) {
+
+        document.getElementById("andGate").src = "and2off.png";
+
+    }
+
+}

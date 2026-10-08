@@ -3,8 +3,8 @@ var inputTwoIsOn = false;
 
 
 function toggleImage() {
-   var img1 = "offbutton.png";
-   var img2 = "onbutton.png";
+   var img1 = "button-off-xxl.png";
+   var img2 = "button-on-xxl.png";
   
    
    var imgElement = document.getElementById('toggleImage');

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Even and Odd</title>
+</head>
+<body>
+
+<p>Enter two numbers:</p>
+
+<input type="number" id="num1">
+<input type="number" id="num2">
+
+<button onclick="calculate()">Calculate</button>
+
+<p>Sum of even numbers:</p>
+<h2 id="even"></h2>
+
+<p>Sum of odd numbers:</p>
+<h2 id="odd"></h2>
+
+<script>
+function calculate() {
+
+    let n1 = +num1.value;
+    let n2 = +num2.value;
+
+    let even = 0;
+    let odd = 0;
+
+    if (n1 % 2 == 0) {
+        even = even + n1;
+    } else {
+        odd = odd + n1;
+    }
+
+    if (n2 % 2 == 0) {
+        even = even + n2;
+    } else {
+        odd = odd + n2;
+    }
+
+    document.getElementById("even").textContent = even;
+    document.getElementById("odd").textContent = odd;
+}
+</script>
+
+</body>
+</html>
+    

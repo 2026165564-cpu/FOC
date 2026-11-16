@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominic Lopez - Factorial Calculator</title>
+  <link rel="icon" type="image/png" href="images/iconss.jpg">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+  <h2>Factorial Calculator</h2>
+
+  <p>Enter a number:</p>
+
+  <label for="limit">Number:</label>
+  <input type="number" id="limit" aria-label="Factorial limit">
+
+  <br><br>
+
+  <button onclick="calculateFactorial()">Calculate</button>
+
+  <h3>Result</h3>
+  <h2 id="result"></h2>
+
+<script>
+function calculateFactorial() {
+    let max = +document.getElementById('limit').value;
+    let numbers = Array.from({ length: max }, (v, i) => i + 1);
+    let total = numbers.reduce((product, n) => product * n, 1);
+    document.getElementById('result').textContent = total;
+}
+</script>
+
+</body>
+</html>
